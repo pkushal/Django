@@ -1,0 +1,14 @@
+{% extends "base.html"%}
+{% block content%}
+
+
+<h3> <a href="/admin">{{post.title}}</a></h3>
+<div class = "post_meta">
+    on {{post.date}}
+</div>
+
+<div class = "post_body">
+    {{post.body | safe | linebreaks}}
+</div>
+
+{%endblock%}
